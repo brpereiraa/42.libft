@@ -17,7 +17,7 @@ char	*ft_itoa(int n)
 	char *c;
 
 	num = count(n);
-	c = (char *)malloc(sizeof(char *) * num);
+	c = (char *)malloc(sizeof(char) * (num + 1));
 
 	c[num--] = '\0';
 	while(n)
@@ -31,9 +31,7 @@ char	*ft_itoa(int n)
 
 // int main() {
 // 	char	*count;
-// 	int	n;
-  
-// 	n = 40000;
+
 // 	count = ft_itoa(n);
 // 	printf("%s", count);
 // 	return 0;
