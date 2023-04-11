@@ -1,16 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/11 19:57:29 by brpereir          #+#    #+#             */
+/*   Updated: 2023/04/11 20:38:19 by brpereir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
- void *memset(void *s, int c, size_t n)
- {
-	int	i;
-	void	*d;
+void	*memset(void *s, int c, size_t n)
+{
+	unsigned char	*ptr;
+	size_t			i;
 
+	ptr = (unsigned char *)s;
 	i = 0;
-	d = s;
-	while(i < n)	
-	{
-		(char *)(s);
-		s = (unsigned char )c;
-		s++;
-	}
- }
+	while (i < n)
+		ptr[i++] = c;
+}

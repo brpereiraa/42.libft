@@ -1,16 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/11 20:00:05 by brpereir          #+#    #+#             */
+/*   Updated: 2023/04/11 20:00:10 by brpereir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	int	i;
-	char *c;
+	int		i;
+	char	*c;
 
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		c = NULL;
 		c++;
 	}
-
 	s = &c;
-}
+}	

@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/11 19:55:52 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/11 19:55:53 by brpereir         ###   ########.fr       */
+/*   Created: 2023/04/11 19:39:01 by brpereir          #+#    #+#             */
+/*   Updated: 2023/04/11 19:52:18 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+int	ft_isascii(int c)
 {
-	if (c < 127 && c > 32)
-		return (1);
+	if ((c >= '0' && c <= '9'))
+	{
+		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+			return (1);
+	}
 	return (0);
 }
 
 // int	main(void)
 // {
-// 	printf("%i", ft_isprint(c));
+// 	printf("%i", ft_isdigit(c));
 // 	return (0);
 // }
