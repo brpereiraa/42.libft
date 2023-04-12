@@ -6,9 +6,11 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:50:11 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/11 21:50:12 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/12 22:59:42 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int count(int n)
 {

@@ -6,9 +6,11 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:50:17 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/11 21:50:17 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/12 23:01:05 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_strchr(char *str, char c)
 {

@@ -6,11 +6,11 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 19:57:29 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/11 20:42:37 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/12 23:00:37 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*memset(void *s, int c, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:45:01 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/11 21:45:02 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/12 23:02:00 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_strnstr(char *needle, char *haystack, int n)
 {

@@ -6,11 +6,11 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 19:48:55 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/11 19:51:15 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/12 23:00:31 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
