@@ -6,21 +6,11 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:01:28 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 23:01:29 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/14 18:28:21 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strlen(char *str)
-{
-	int	len;
-
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	return (len);
-}
 
 char	*ft_strdup(char *src)
 {

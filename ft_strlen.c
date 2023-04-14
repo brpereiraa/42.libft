@@ -6,13 +6,13 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 19:56:06 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 23:01:38 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/14 18:07:07 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(char const *str)
 {
 	int	i;
 
@@ -21,9 +21,3 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	printf("%i", strlen(c));
-// 	return (0);
-// }

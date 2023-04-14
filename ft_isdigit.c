@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 19:48:55 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 23:00:31 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/14 18:56:22 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_isdigit(int c)
 {
-	if ((c < '0' || c > '9') && c >= 127)
-		return (0);
-	return (1);
+	if (c <= '0' || c >= '9')
+		return (1);
+	return (0);
 }
 
 // int	main(void)

@@ -6,13 +6,13 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:01:33 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 23:01:34 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/14 18:06:51 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(char *str);
+int ft_strlen(char const *str);
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -28,17 +28,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = 0;
 	j = 0;
 	while(i < len1)
-		str[i++] = s1[i];
+	{
+		str[i] = s1[i];
+		i++;
+	}
 	while(j < len2)
-		str[i++] = s2[j++];
-}
-
-int main(void) {
-  char *str;
-  char *s1 = "hello";
-  char *s2 = "wordl";
-  
-  str = ft_strjoin(s1, s2);
-  printf("%s", str);
-  return 0;
+	{
+		str[i] = s2[j];
+		i++;
+		j++;
+	}
+	
+	return (str);
 }

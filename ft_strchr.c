@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:50:17 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 23:01:05 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/14 19:52:01 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ char *ft_strchr(char *str, char c)
 	{
 		if(str[i] == c)
 			return (&str[i]);
+		i++;
 	}
 	return (0);
 }

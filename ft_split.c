@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:44:58 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 23:01:02 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/14 20:13:56 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ char *allocate(char const *s, int start, int finish)
 		copy[i++] =  s[start];
 		start++;
 	}
+	copy[i] = 0;
 	return (copy);
 }
 
@@ -56,6 +57,9 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	i = wordCount(s, c);
 	arr = (char **)malloc(sizeof(char*) * i);
+	if(!arr)
+		return NULL;
+	arr[i] = 0;
 	i = 0;
 	while (s[i])
 	{

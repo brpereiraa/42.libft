@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:01:56 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 23:01:56 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/14 18:22:00 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 char *ft_strnew(size_t size)
 {
-	int	i;
+	size_t	i;
 	char* str;
 	
 	str = malloc(sizeof(char *) *  size);
 	i = 0;
 	while(i < size)
 		str[i++] = 0;
+
+	return (str);
 }
