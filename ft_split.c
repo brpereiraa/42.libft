@@ -6,13 +6,13 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:44:58 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/14 20:13:56 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/15 19:53:09 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int wordCount(char const *s, char c)
+int	word_count(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -26,20 +26,19 @@ int wordCount(char const *s, char c)
 		i++;
 	}
 	j++;
-
 	return (j);
 }
 
-char *allocate(char const *s, int start, int finish)
+char	*allocate(char const *s, int start, int finish)
 {
-	char	*copy;
+	char			*copy;
 	unsigned int	i;
-	
+
 	i = 0;
-	copy = (char *)malloc(sizeof(char) * (finish-start));
+	copy = (char *)malloc(sizeof(char) * (finish - start));
 	while (start < finish)
 	{
-		copy[i++] =  s[start];
+		copy[i++] = s[start];
 		start++;
 	}
 	copy[i] = 0;
@@ -55,17 +54,17 @@ char	**ft_split(char const *s, char c)
 
 	start = 0;
 	j = 0;
-	i = wordCount(s, c);
-	arr = (char **)malloc(sizeof(char*) * i);
-	if(!arr)
-		return NULL;
+	i = word_count(s, c);
+	arr = (char **)malloc(sizeof(char *) * i);
+	if (!arr)
+		return (NULL);
 	arr[i] = 0;
 	i = 0;
 	while (s[i])
 	{
 		if (s[i] == c)
 		{
-			arr[j] = allocate(s, start, i-1);	
+			arr[j] = allocate(s, start, i - 1);
 			j++;
 			start = i;
 		}

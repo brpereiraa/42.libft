@@ -6,12 +6,11 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 22:22:28 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/12 22:59:52 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/15 06:21:24 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 int	whitespaces(char *str, int *ptr_i)
 {
