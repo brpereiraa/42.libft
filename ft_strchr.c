@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:50:17 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/15 19:47:31 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/17 20:55:11 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ char	*ft_strchr(char *str, char c)
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != c)
 	{
-		if (str[i] == c)
-			return (&str[i]);
+		if (str[i] == '\0')
+			return (NULL);
 		i++;
 	}
-	return (NULL);
+	return ((char *)str + i);
 }
