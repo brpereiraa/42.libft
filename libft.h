@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 22:21:27 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/15 20:23:42 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/20 22:32:09 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,13 @@ int		ft_toupper(int c);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 void *ft_memchr(const void *s, int c, size_t n);
 void *ft_memmove(void *dest, const void *src, size_t n);	
+t_list *ft_lstnew(void *content);
+int ft_lstsize(t_list *lst);
+t_list *ft_lstlast(t_list *lst);
+void ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
+void	ft_lstclear(t_list **lst, void (*del)(void*));
+
 
 
 #endif
