@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 19:37:09 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/15 19:41:28 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/21 18:51:01 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	unsigned int	i;
 	unsigned int	j;
 
+	if (size == 0)
+		return (ft_strlen(src));
 	dlen = ft_strlen(dest);
 	slen = ft_strlen(src);
 	i = 0;

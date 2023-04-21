@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 22:21:27 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/20 22:32:09 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/21 19:35:32 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,8 @@ char	*ft_strcpy(char *dest, char *src);
 char	*ft_strdup(char *src);
 char	*ft_strjoin(char const *s1, char const *s2);
 int		ft_strlen(char const *str);
-int		ft_strncmp(char *s1, char *s2, int n);
+int		ft_strncmp(const unsigned char *s1, const unsigned char *s2, int n);
 char	*ft_strncpy(char *dest, char *src, int n);
-char	*ft_strnew(size_t size);
 char	*ft_strnstr(char *needle, char *haystack, int n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
