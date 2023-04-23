@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 20:00:05 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/14 19:05:08 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/22 15:10:07 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t		i;
+	size_t	i;
 	char	*c;
 
 	i = 0;
@@ -24,4 +24,4 @@ void	ft_bzero(void *s, size_t n)
 		c[i] = 0;
 		i++;
 	}
-}	
+}

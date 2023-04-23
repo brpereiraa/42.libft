@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:00:51 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/15 06:22:12 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/22 16:35:03 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,19 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		ft_putchar_fd('-', fd);
 		ft_putchar_fd('2', fd);
-		ft_putnbr_fd(147483648, fd);
+		n = 147483648;
 	}
-	else if (n < 0)
+	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
 		n *= -1;
-		ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd(((n % 10) + 48), fd);
 	}
-	else if (n < 10)
-		ft_putchar_fd((n + 48), fd);
-	else
+	if (n < 10)
 	{
-		ft_putnbr_fd((n / 10), fd);
-		ft_putchar_fd(((n % 10) + 48), fd);
+		ft_putchar_fd(n + 48, fd);
+		return ;
 	}
+	else
+		ft_putnbr_fd(n / 10, fd);
+	ft_putnbr_fd(n % 10, fd);
 }

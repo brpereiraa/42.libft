@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:45:01 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/21 19:35:09 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/23 19:03:34 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@ char	*ft_strnstr(char *haystack, char *needle, int n)
 	int	j;
 
 	i = 0;
-	if (needle[0] == '\0' || !n)
+	if (needle[0] == '\0')
 		return (haystack);
+	if (!n)
+		return (NULL);
 	while (haystack[i] && i < n)
 	{
 		j = 0;
-		while (haystack[i + j] == needle[j + 1])
+		while (haystack[i + j] == needle[j] && ((i + j) < n))
 		{
-			if (needle[j] == '\0')
+			if (needle[j + 1] == '\0')
 			{
 				return (&haystack[i]);
 			}

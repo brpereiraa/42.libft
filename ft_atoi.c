@@ -6,13 +6,13 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 22:22:28 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/15 06:21:24 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/23 17:42:17 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	whitespaces(char *str, int *ptr_i)
+static int	whitespaces(char *str, int *ptr_i)
 {
 	int	count;
 	int	i;
@@ -21,7 +21,7 @@ int	whitespaces(char *str, int *ptr_i)
 	count = 1;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
-	while (str[i] && (str[i] == 43 || str[i] == 45))
+	if (str[i] && (str[i] == 43 || str[i] == 45))
 	{
 		if (str[i] == 45)
 			count *= -1;

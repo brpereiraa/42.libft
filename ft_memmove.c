@@ -6,13 +6,13 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 19:57:08 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/15 20:19:45 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/23 16:44:41 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (!src && !dest)
 		return (NULL);

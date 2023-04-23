@@ -6,7 +6,7 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:00:56 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/20 22:46:41 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/22 15:02:55 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if(!s)
+	if (!s)
 		return ;
 	while (s[i] != 0)
 		ft_putchar_fd(s[i++], fd);
