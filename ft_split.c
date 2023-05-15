@@ -6,13 +6,13 @@
 /*   By: brpereir <brpereir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:44:58 by brpereir          #+#    #+#             */
-/*   Updated: 2023/04/23 17:18:59 by brpereir         ###   ########.fr       */
+/*   Updated: 2023/04/24 19:35:56 by brpereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	word_count(char const *s, char c)
+static size_t	word_count(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -32,16 +32,15 @@ static int	word_count(char const *s, char c)
 			flag = 1;
 		i++;
 	}
-	j++;
 	return (j);
 }
 
-static int	letters_in_word(char const *s, char c, int i)
+static size_t	letters_in_word(char const *s, char c, size_t i)
 {
-	int	size;
+	size_t	size;
 
 	size = 0;
-	while (s[i] != c && s[i])
+	while (s[i] && s[i] != c)
 	{
 		size++;
 		i++;
@@ -51,20 +50,20 @@ static int	letters_in_word(char const *s, char c, int i)
 
 char	**ft_split(char const *s, char c)
 {
+	size_t	i;
+	size_t	j;
+	size_t	words;
 	char	**arr;
-	int		i;
-	int		j;
-	int		flag;
-	int		word;
 
+	if (!s)
+		return (NULL);
 	j = 0;
 	i = 0;
-	flag = -1;
-		word = word_count(s, c);
-	arr = (char **)malloc(sizeof(char *) * (word));
+	words = word_count(s, c);
+	arr = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!arr)
 		return (NULL);
-	while (++flag < word - 1)
+	while (j < words)
 	{
 		while (s[i] == c)
 			i++;
